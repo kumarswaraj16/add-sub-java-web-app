@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <servlet>
+       <servlet-name>es</servlet-name>
+       <servlet-class>com.swaraj.ValidationServlet</servlet-class>
+  </servlet>
+  <servlet>
+       <servlet-name>as</servlet-name>
+       <servlet-class>com.swaraj.AddingServlet</servlet-class>
+  </servlet>
+  <servlet>
+       <servlet-name>ss</servlet-name>
+       <servlet-class>com.swaraj.SubtractingServlet</servlet-class>
+  </servlet>
+  <servlet>
+       <servlet-name>rs</servlet-name>
+       <servlet-class>com.swaraj.ResponseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>es</servlet-name>
+       <url-pattern>/entry</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+       <servlet-name>as</servlet-name>
+       <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+       <servlet-name>ss</servlet-name>
+       <url-pattern>/sub</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+       <servlet-name>rs</servlet-name>
+       <url-pattern>/resp</url-pattern>
+  </servlet-mapping>
+</web-app>
